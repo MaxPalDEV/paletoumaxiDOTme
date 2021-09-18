@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faInstagramSquare, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  // Icônes FontAwesome
+  InstagramIcon = faInstagramSquare;
+  GitHubIcon = faGithubSquare;
+  LinkedInIcon = faLinkedin;
+
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
