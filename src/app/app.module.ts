@@ -10,6 +10,7 @@ import { PortfolioItemComponent } from './view/portfolio/portfolio-item/portfoli
 import { ContactComponent } from './view/contact/contact.component';
 import { HeaderComponent } from './component/header/header.component';
 import { MenuComponent } from './component/menu/menu.component';
+import { CopyrightsComponent } from './component/header/copyrights/copyrights.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MenuComponent } from './component/menu/menu.component';
     PortfolioItemComponent,
     ContactComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    CopyrightsComponent
   ],
   imports: [
     BrowserModule,
