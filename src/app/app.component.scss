@@ -1,13 +1,13 @@
 #headerColumn
 {
   background-color: #326273;
-  height: 100vh;
+  min-height: 100vh;
   width: 350px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-#ContentColumn
+.ContentColumn
 {
   margin-left: auto;
   margin-right: auto;

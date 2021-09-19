@@ -3,9 +3,12 @@
     <div class="col-3" id="headerColumn">
       <app-header></app-header>
     </div>
-    <div class="col-12 col-md-8" id="ContentColumn">
+    <div class="col-12 col-md-8 ContentColumn">
       <app-menu></app-menu>
-      <router-outlet></router-outlet>
+      <div class="col-10 ContentColumn" style="margin-top: 70px;">
+        <router-outlet></router-outlet>
+      </div>
+
     </div>
   </div>
 </div>
