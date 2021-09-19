@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccueilComponent } from './view/accueil/accueil.component';
@@ -12,6 +12,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { CopyrightsComponent } from './component/header/copyrights/copyrights.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,11 +22,12 @@ import { CopyrightsComponent } from './component/header/copyrights/copyrights.co
     ContactComponent,
     HeaderComponent,
     MenuComponent,
-    CopyrightsComponent
+    CopyrightsComponent,
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
