@@ -11,6 +11,7 @@ import { ContactComponent } from './view/contact/contact.component';
 import { HeaderComponent } from './component/header/header.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { CopyrightsComponent } from './component/header/copyrights/copyrights.component';
+import {NgxPopperjsModule} from 'ngx-popperjs';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { CopyrightsComponent } from './component/header/copyrights/copyrights.co
     BrowserModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
+    NgxPopperjsModule,
     AppRoutingModule
   ],
   providers: [],

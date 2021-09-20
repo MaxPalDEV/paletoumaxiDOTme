@@ -25,6 +25,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@popperjs/core": "^2.10.1",
     "bootstrap": "^5.1.1",
+    "ngx-popperjs": "^12.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
