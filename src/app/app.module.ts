@@ -13,6 +13,7 @@ import { MenuComponent } from './component/menu/menu.component';
 import { CopyrightsComponent } from './component/header/copyrights/copyrights.component';
 import {NgxPopperjsModule} from 'ngx-popperjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CvComponent } from './view/cv/cv.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     MenuComponent,
     CopyrightsComponent,
+    CvComponent,
   ],
   imports: [
     BrowserModule,

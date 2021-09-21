@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLaptopCode, faEnvelopeOpen, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faLaptopCode, faEnvelopeOpen, faHome, faFileInvoice } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-menu',
@@ -12,6 +12,7 @@ export class MenuComponent implements OnInit {
   PortfolioIcon = faLaptopCode;
   ContactIcon = faEnvelopeOpen;
   HomeIcon = faHome;
+  CVIcon = faFileInvoice;
 
   constructor() { }
 
