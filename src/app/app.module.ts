@@ -12,6 +12,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { CopyrightsComponent } from './component/header/copyrights/copyrights.component';
 import {NgxPopperjsModule} from 'ngx-popperjs';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {NgxPopperjsModule} from 'ngx-popperjs';
     FontAwesomeModule,
     BrowserAnimationsModule,
     NgxPopperjsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

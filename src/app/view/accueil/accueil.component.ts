@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeInAnimation } from '../../animation/index';
-import { faGlobe, faMobileAlt, faServer,faMicrochip,faDatabase,faLaptopCode, faAtom, faCode,faFileCode, faFolderOpen } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faMobileAlt, faBriefcase, faGraduationCap, faUserGraduate, faSchool, faServer,faMicrochip,faDatabase,faLaptopCode, faAtom, faCode,faFileCode, faFolderOpen, faCaretSquareRight, faBuilding, faUserTie, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import { faWordpress, faMicrosoft  } from '@fortawesome/free-brands-svg-icons'
 
 @Component({
@@ -15,6 +15,7 @@ import { faWordpress, faMicrosoft  } from '@fortawesome/free-brands-svg-icons'
 export class AccueilComponent implements OnInit {
 
   // FontAwesome Icons
+  pointTitleIcon = faCaretSquareRight
   webIcone = faGlobe;
   mobilIcone = faMobileAlt;
   frontendIcon = faLaptopCode;
@@ -27,6 +28,13 @@ export class AccueilComponent implements OnInit {
   langueIcon = faFileCode;
   microsoftIcon = faMicrosoft;
   diverIcon = faFolderOpen;
+  companyIcon = faBuilding;
+  postIcon = faUserTie;
+  dateIcon = faCalendarAlt;
+  otherJobsIcon = faBriefcase;
+  schoolIcon = faSchool;
+  diplomaIcon = faGraduationCap;
+  levelIcon = faUserGraduate;
 
 
 

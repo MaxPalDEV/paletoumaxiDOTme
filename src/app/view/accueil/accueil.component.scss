@@ -4,6 +4,12 @@
   margin-right: auto;
 }
 
+.contentSeparator
+{
+  color: #1C3741;
+  height: 3px;
+}
+
 #ConsoleProfil
 {
   border-radius: 10px;
@@ -29,3 +35,25 @@
   bottom: 0;
   width: 88%;
 }
+
+.noListStyle
+{
+  list-style: none;
+}
+
+a
+{
+  color: #203E49;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #2B5361;
+}
+
+.iconStyle
+{
+  color: #2B5361;
+}
+
