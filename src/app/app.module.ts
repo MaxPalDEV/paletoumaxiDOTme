@@ -14,6 +14,7 @@ import { CopyrightsComponent } from './component/header/copyrights/copyrights.co
 import {NgxPopperjsModule} from 'ngx-popperjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CvComponent } from './view/cv/cv.component';
+import { PortfolioService } from './services/portfolio.service';
 
 
 @NgModule({
@@ -36,7 +37,9 @@ import { CvComponent } from './view/cv/cv.component';
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    PortfolioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

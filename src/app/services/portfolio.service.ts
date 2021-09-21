@@ -15,13 +15,13 @@ export class PortfolioService{
     },
     {
       id: 2,
-      name: "Portfolio 1",
+      name: "Portfolio 2",
       logo: " ",
       technos: "HTML,CSS,JS"
     },
     {
       id: 3,
-      name: "Portfolio 1",
+      name: "Portfolio 3",
       logo: " ",
       technos: "HTML,CSS,JS"
     },

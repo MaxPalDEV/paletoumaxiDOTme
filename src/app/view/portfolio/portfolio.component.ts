@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 import { fadeInAnimation } from '../../animation/index';
 @Component({
   selector: 'app-portfolio',
@@ -11,9 +13,18 @@ import { fadeInAnimation } from '../../animation/index';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  portfolioSubscription!: Subscription;
+  portfolios: any[] | undefined;
+
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
+    this.portfolioSubscription = this.portfolioService.portfolioSubject.subscribe(
+      (portfolios: any[]) => {
+        this.portfolios = portfolios;
+      }
+    );
+    this.portfolioService.emitPortfolioSubject();
   }
 
 }

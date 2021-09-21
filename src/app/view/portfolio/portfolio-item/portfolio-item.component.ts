@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
   selector: 'app-portfolio-item',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioItemComponent implements OnInit {
 
-  constructor() { }
+  // Paramètres du component
+  @Input() itemName!: string;
+  @Input() itemLogo!: string;
+  @Input() itemTechnos!: string;
+  @Input() indexOfAppareil!: number;
+  @Input() id!: number;
+
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
   }
