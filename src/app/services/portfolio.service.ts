@@ -9,7 +9,7 @@ export class PortfolioService{
   private portfolios = [
     {
       id: 1,
-      name: "Portfolio 1",
+      name: "GASPRA V2",
       logo: " ",
       technos: "HTML,CSS,JS"
     },
@@ -25,6 +25,24 @@ export class PortfolioService{
       logo: " ",
       technos: "HTML,CSS,JS"
     },
+    {
+      id: 4,
+      name: "Portfolio 4",
+      logo: " ",
+      technos: "HTML,CSS,JS"
+    },
+    {
+      id: 5,
+      name: "Portfolio 4",
+      logo: " ",
+      technos: "HTML,CSS,JS"
+    },
+    {
+      id: 6,
+      name: "Portfolio 4",
+      logo: " ",
+      technos: "HTML,CSS,JS"
+    }
   ];
 
   emitPortfolioSubject(){

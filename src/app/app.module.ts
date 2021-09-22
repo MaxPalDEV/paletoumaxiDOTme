@@ -15,6 +15,9 @@ import {NgxPopperjsModule} from 'ngx-popperjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CvComponent } from './view/cv/cv.component';
 import { PortfolioService } from './services/portfolio.service';
+import { SingleItemPortfolioComponent } from './view/portfolio/single-item-portfolio/single-item-portfolio.component';
+import { PortfolioGuard } from './services/guard/portfolio-guard.service';
+import { NotFoundComponent } from './component/not-found/not-found.component';
 
 
 @NgModule({
@@ -28,6 +31,8 @@ import { PortfolioService } from './services/portfolio.service';
     MenuComponent,
     CopyrightsComponent,
     CvComponent,
+    SingleItemPortfolioComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { PortfolioService } from './services/portfolio.service';
     NgbModule
   ],
   providers: [
-    PortfolioService
+    PortfolioService,
+    PortfolioGuard
   ],
   bootstrap: [AppComponent]
 })
