@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { faGlobe, faMobileAlt, faBriefcase, faGraduationCap, faUserGraduate, faSchool, faServer,faMicrochip,faDatabase,faLaptopCode, faAtom, faCode,faFileCode, faFolderOpen, faCaretSquareRight, faBuilding, faUserTie, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import { faWordpress, faMicrosoft  } from '@fortawesome/free-brands-svg-icons'
-import { fadeInAnimation } from '../../animation/index';
 
 @Component({
   selector: 'app-cv',
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.scss'],
-  animations: [fadeInAnimation],
+  /*animations: [fadeInAnimation],
 
     // attach the fade in animation to the host (root) element of this component
-    host: { '[@fadeInAnimation]': '' }
+    host: { '[@fadeInAnimation]': '' }*/
 })
 export class CvComponent implements OnInit {
 

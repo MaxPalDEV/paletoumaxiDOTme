@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PortfolioService } from 'src/app/services/portfolio.service';
-import { fadeInAnimation } from '../../../animation/index';
 import { faCode, faLink, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-single-item-portfolio',
   templateUrl: './single-item-portfolio.component.html',
   styleUrls: ['./single-item-portfolio.component.scss'],
-  animations: [fadeInAnimation],
+  /*animations: [fadeInAnimation],
 
     // attach the fade in animation to the host (root) element of this component
-    host: { '[@fadeInAnimation]': '' }
+    host: { '[@fadeInAnimation]': '' }*/
 })
 export class SingleItemPortfolioComponent implements OnInit {
 
