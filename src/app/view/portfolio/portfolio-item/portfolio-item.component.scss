@@ -1,3 +1,7 @@
+.iconStyle{
+  color: #203E49;
+}
+
 .box{
   position: relative;
   width:  calc(250px - 15px);
@@ -6,7 +10,8 @@
   float: left;
   margin: 5px;
   box-sizing: border-box;
-  overflow: hidden;;
+  overflow: hidden;
+
 }
 
  .box .icon{
@@ -29,7 +34,7 @@
 
 }
 
- .box .icon .fa{
+ .box .icon img{
   position: absolute;
   top: 50%;
   left:50%;
@@ -53,7 +58,7 @@
 
 }
 
- .box:hover .icon .fa{
+ .box:hover .icon img{
   font-size: 15px;
 }
 

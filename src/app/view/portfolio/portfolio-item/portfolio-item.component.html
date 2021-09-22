@@ -1,12 +1,11 @@
 <a [routerLink]="[id]">
 <div class="box">
-
     <div class="icon">
-      {{itemLogo}}
+      <img src="{{ itemLogo }}" width="70%" alt="" />
     </div>
     <div class="content">
       <h3> {{itemName}} </h3>
-      <p> {{itemTechnos}} </p>
+      <p style="font-size: 12px;"> <fa-icon [icon]="technosIcon" class="iconStyle"></fa-icon> {{itemTechnos}} </p>
     </div>
 </div>
 </a>

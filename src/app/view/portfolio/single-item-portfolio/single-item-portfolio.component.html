@@ -1,7 +1,20 @@
-<button routerLink="/portfolio">Retour à la liste</button>
+<a routerLink="/portfolio" class="returnStyle"><fa-icon [icon]="returnIcon"></fa-icon>  Retour</a>
 <div class="row">
 <div class="title text-center">
-  <h1> {{name}} </h1>
+  <h1><fa-icon [icon]="siteIcon" class="iconStyle"></fa-icon> {{name}} </h1>
+  <h6><fa-icon [icon]="technoIcon" class="iconStyle"></fa-icon> Technologies utilisées : {{techno}} </h6>
+  <hr>
+  <ngb-carousel >
+    <ng-template ngbSlide *ngFor="let imag of imgSlides">
+      <div class="picsum-img-wrapper">
+        <img src="{{ imag.image }}" alt="Random first slide" class="img-fluid" style=" max-height: 400px;">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <div class="row" style="margin-top: 15px;">
+    {{description}}
+
+  </div>
 </div>
 </div>
 

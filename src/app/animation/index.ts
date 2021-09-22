@@ -10,16 +10,7 @@ export const fadeInAnimation =
             style({ opacity: 0 }),
 
             // animation and styles at end of transition
-            animate('.8s .5s', style({ opacity: 1 }))
+            animate('.8s', style({ opacity: 1 }))
 
-        ]),
-
-        transition(':leave', [
-
-          // css styles at start of transition
-          style({ opacity: 1 }),
-
-          // animation and styles at end of transition
-          animate('.3s', style({ opacity: 0 }))
-      ]),
+        ])
     ]);

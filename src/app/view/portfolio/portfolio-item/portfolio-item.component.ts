@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
+import { faTag } from '@fortawesome/free-solid-svg-icons'
+
 
 @Component({
   selector: 'app-portfolio-item',
@@ -7,6 +9,9 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   styleUrls: ['./portfolio-item.component.scss']
 })
 export class PortfolioItemComponent implements OnInit {
+
+  // FontAwesome Icons
+  technosIcon = faTag;
 
   // Paramètres du component
   @Input() itemName!: string;
