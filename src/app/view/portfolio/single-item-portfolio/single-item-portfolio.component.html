@@ -7,12 +7,11 @@
   <ngb-carousel >
     <ng-template ngbSlide *ngFor="let imag of imgSlides">
       <div class="picsum-img-wrapper">
-        <img src="{{ imag.image }}" alt="Random first slide" class="img-fluid" style=" max-height: 400px;">
+        <img src="{{ imag.image }}" alt="Random first slide" class="img-fluid" style=" max-height: 400px; image-rendering: -webkit-optimize-contrast;">
       </div>
     </ng-template>
   </ngb-carousel>
-  <div class="row" style="margin-top: 15px;">
-    {{description}}
+  <div class="row" style="margin-top: 15px;" [innerHTML]="description" >
 
   </div>
 </div>

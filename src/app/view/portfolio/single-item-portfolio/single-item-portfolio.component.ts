@@ -30,8 +30,7 @@ export class SingleItemPortfolioComponent implements OnInit {
   ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
     this.name = this.portfolioService.getPortfolioById(+id)?.name!;
-    var doc = new DOMParser().parseFromString(this.portfolioService.getPortfolioById(+id)?.description!, "text/html");
-    this.description = doc.documentElement.textContent;
+    this.description = this.portfolioService.getPortfolioById(+id)?.description!;
     this.techno = this.portfolioService.getPortfolioById(+id)?.technos!;
     this.imgSlides = this.portfolioService.getPortfolioById(+id)?.libraryImages!;
   }
