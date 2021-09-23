@@ -1,1 +1,19 @@
-<p>contact works!</p>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmitForm()">
+  <div class="form-group">
+    <label for="name">Votre nom :</label>
+    <input type="text" name="name" id="name" class="form-control" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label for="email">Votre email :</label>
+    <input type="text" name="email" id="email" class="form-control" formControlName="email">
+  </div>
+  <div class="form-group">
+    <label for="subject">Sujet :</label>
+    <input type="text" name="subject" id="subject" class="form-control" formControlName="subject">
+  </div>
+  <div class="form-group">
+    <label for="content">Contenu :</label>
+    <textarea name="content" class="form-control" id="" cols="30" rows="10" formControlName="content"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>

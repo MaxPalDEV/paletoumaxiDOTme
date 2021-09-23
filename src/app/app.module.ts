@@ -18,6 +18,7 @@ import { PortfolioService } from './services/portfolio.service';
 import { SingleItemPortfolioComponent } from './view/portfolio/single-item-portfolio/single-item-portfolio.component';
 import { PortfolioGuard } from './services/guard/portfolio-guard.service';
 import { NotFoundComponent } from './component/not-found/not-found.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { NotFoundComponent } from './component/not-found/not-found.component';
     FontAwesomeModule,
     BrowserAnimationsModule,
     NgxPopperjsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     NgbModule
   ],
