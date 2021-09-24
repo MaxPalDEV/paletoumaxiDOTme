@@ -1,17 +1,19 @@
+@import '/src/app/styles/variables';
+
 .iconStyle
 {
-  color: #2B5361;
+  color: $colorLink;
 }
 
 .returnStyle{
   text-decoration: none;
-  color: #203E49 ;
+  color: $colorLink ;
   font-size: 25px;
   font-weight: bold;
 }
 
 .returnStyle:hover{
-  color: #2B5361;
+  color: $colorLinkHover;
 }
 
 .textBold{

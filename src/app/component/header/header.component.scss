@@ -1,3 +1,5 @@
+@import '/src/app/styles/variables';
+
 .container
 {
   position: relative;
@@ -10,7 +12,7 @@
 {
   font-size: 41px;
   font-weight: bolder;
-  color: white;
+  color: $colorLink;
   padding: 0;
 }
 
@@ -133,7 +135,7 @@
 #instagramIcon
 {
   padding: 0;
-  color: #1C3741;
+  color: $colorLink;
   transition-property: color;
   transition-duration: 0.5s;
 }
@@ -144,7 +146,7 @@
 
 #githubIcon
 {
-  color: #1C3741;
+  color: $colorLink;
   transition-property: color;
   transition-duration: 0.5s;
 }
@@ -155,7 +157,7 @@
 
 #linkedinIcon
 {
-  color: #1C3741;
+  color: $colorLink;
   transition-property: color;
   transition-duration: 0.5s;
 }
@@ -166,12 +168,13 @@
 
 #presentation a
 {
-  color: #203E49;
+  color: $colorLink;
+  text-decoration: none;
 }
 
 #presentation a:hover
 {
-  color: #2B5361;
+  color: $colorLinkHover;
 }
 
 .copyrights{

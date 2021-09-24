@@ -1,3 +1,13 @@
+@import '/src/app/styles/variables';
+
+.iconeStyle{
+  color: $colorLink;
+}
+
+.devStyle{
+  color: #ff3333;
+}
+
 .marginCenter
 {
   margin-left: auto;
@@ -6,7 +16,7 @@
 
 .contentSeparator
 {
-  color: #1C3741;
+  color: $colorLinkHover;
   height: 3px;
 }
 
@@ -19,8 +29,8 @@
 
 .logoStyle
 {
-  width: 30px;
-  margin: 5px;
+  width: 35px;
+  color: $colorLink;
 }
 
 .columnLang
@@ -57,3 +67,35 @@ a:hover
   color: #2B5361;
 }
 
+.profilCardBack{
+  padding: 10px;
+ background-color: #0F1022;
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.profilCard{
+  padding: 16px;
+ background-color: #0F1022;
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+/*.profilCardBack:hover{
+  animation: shake 1s infinite;
+  animation-direction:alternate-reverse;
+}
+@keyframes shake {
+  0% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(2deg);
+  }
+}*/
+
+.titleProfil{
+ color: $colorLinkHover;
+}

@@ -1,5 +1,7 @@
+@import '/src/app/styles/variables';
+
 .iconStyle{
-  color: #203E49;
+  color: $colorLink;
 }
 
 .box{
@@ -100,9 +102,9 @@
 }
 
  .box .icon{
-  background: #203E49;
+  background: #0F1022;
 }
 
  .box{
-  background: #2B5361;
+  background: $backgroundColor-dark;
 }

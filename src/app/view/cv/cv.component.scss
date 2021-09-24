@@ -1,3 +1,5 @@
+@import '/src/app/styles/variables';
+
 .marginCenter
 {
   margin-left: auto;
@@ -43,16 +45,16 @@
 
 a
 {
-  color: #203E49;
+  color: $colorLink;
   text-decoration: none;
 }
 
 a:hover
 {
-  color: #2B5361;
+  color: $colorLinkHover;
 }
 
 .iconStyle
 {
-  color: #2B5361;
+  color: $colorLink;
 }
