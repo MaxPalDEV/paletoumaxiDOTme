@@ -4,3 +4,27 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/**********************
+***********************
+*****MEDIA QUERIES*****
+***********************
+**********************/
+
+@media (max-width: 1670px){
+  .alignStyle{
+    width: 800px;
+  }
+}
+
+@media (max-width: 1189px){
+  .alignStyle{
+    width: 600px;
+  }
+}
+
+@media (max-width: 610px){
+  .alignStyle{
+    width: 400px;
+  }
+}

@@ -12,3 +12,37 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/**********************
+***********************
+*****MEDIA QUERIES*****
+***********************
+**********************/
+
+@media (max-width: 1610px) {
+  .ContentColumn{
+    width: auto;
+  }
+}
+
+@media (max-width: 1189px){
+  .contenu{
+    flex-direction: column;
+  }
+  .ContentColumn{
+    justify-content: center;
+  }
+  .content{
+    width: 100%;
+  }
+  #headerColumn{
+    width: 100vw;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 990px){
+  .menu{
+
+  }
+}

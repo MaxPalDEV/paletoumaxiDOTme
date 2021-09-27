@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faGlobe, faMountain, faFilm, faBook, faGamepad, faGlobeEurope, faMobileAlt, faBriefcase, faGraduationCap, faUserGraduate, faSchool, faServer,faMicrochip,faDatabase,faLaptopCode, faAtom, faCode,faFileCode, faFolderOpen, faCaretSquareRight, faBuilding, faUserTie, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faMountain, faAddressCard, faUser, faFilm, faBook, faGamepad, faGlobeEurope, faMobileAlt, faBriefcase, faGraduationCap, faUserGraduate, faSchool, faServer,faMicrochip,faDatabase,faLaptopCode, faAtom, faCode,faFileCode, faFolderOpen, faCaretSquareRight, faBuilding, faUserTie, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import { faWordpress, faMicrosoft  } from '@fortawesome/free-brands-svg-icons'
 
 @Component({
@@ -35,7 +35,8 @@ export class AccueilComponent implements OnInit {
   gameHobbie = faGamepad;
   movieHobbie = faFilm;
   bookHobbie = faBook;
-
+  profilIcon = faUser;
+  aboutMeIcon = faAddressCard;
 
 
   constructor() { }

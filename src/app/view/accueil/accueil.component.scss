@@ -99,3 +99,20 @@ a:hover
 .titleProfil{
  color: $colorLinkHover;
 }
+
+@media (max-width: 800px){
+  .profilCardBack{
+    width: 95%;
+  }
+}
+
+@media (max-width: 610px){
+  .profilCardBack{
+    width: 95%;
+  }
+
+  .tailleText{
+    font-size: 4vw;
+  }
+}
+

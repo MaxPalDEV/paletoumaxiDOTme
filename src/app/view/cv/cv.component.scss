@@ -58,3 +58,18 @@ a:hover
 {
   color: $colorLink;
 }
+
+/**********************
+***********************
+*****MEDIA QUERIES*****
+***********************
+**********************/
+
+@media (max-width: 1290px) {
+  .contenu{
+    flex-direction: column;
+  }
+  .contenu5{
+    width: auto;
+  }
+}

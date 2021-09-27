@@ -1,5 +1,10 @@
 @import '/src/app/styles/variables';
 
+
+.mobile{
+  display: none;
+}
+
 .active{
   background: $backgroundColor-dark;
   color: $colorText!important;
@@ -69,3 +74,31 @@ ul li a:hover:after{
   transform-origin: right;
 }
 
+@media (max-width: 990px){
+
+  .mobile{
+    display: inline-flex;
+    justify-content: space-between;
+    position: fixed;
+    background: var(--color-background-dark);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    padding: 0;
+    background-color: #171933;
+    text-align: center;
+  }
+
+  .mobile a{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .mobile a .icon
+  {
+    font-size: 25px;
+  }
+
+}

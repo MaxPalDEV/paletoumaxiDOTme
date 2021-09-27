@@ -181,3 +181,22 @@
   position: absolute;
   bottom: 0;
 }
+
+
+@media (max-width: 1189px){
+  #profilPicture{
+    display: none;
+  }
+
+  .container{
+    height: auto;
+  }
+
+  .copyrights{
+    display: none;
+  }
+
+  #presentation{
+    display: none;
+  }
+}

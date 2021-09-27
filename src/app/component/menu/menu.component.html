@@ -1,24 +1,43 @@
 <nav class="navbar navbar-light navbar-expand-lg" style="background-color: transparent;">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse justify-content-end fill" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
-        <li class="nav-item" >
-          <a class="nav-link btn-2" routerLink="accueil" routerLinkActive="active"><fa-icon [icon]="CVIcon"></fa-icon> Accueil</a>
+        <li class="nav-item">
+          <a class="nav-link btn-2" routerLink="accueil" routerLinkActive="active">
+            <fa-icon [icon]="CVIcon"></fa-icon> Accueil
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn-2" routerLink="cv" routerLinkActive="active"><fa-icon [icon]="PortfolioIcon"></fa-icon> Mon CV</a>
+          <a class="nav-link btn-2" routerLink="cv" routerLinkActive="active">
+            <fa-icon [icon]="PortfolioIcon"></fa-icon> Mon CV
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn-2" routerLink="portfolio" routerLinkActive="active"><fa-icon [icon]="PortfolioIcon"></fa-icon> Portfolio</a>
+          <a class="nav-link btn-2" routerLink="portfolio" routerLinkActive="active">
+            <fa-icon [icon]="PortfolioIcon"></fa-icon> Portfolio
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn-2" routerLink="contact" routerLinkActive="active"><fa-icon [icon]="ContactIcon"></fa-icon> Contact</a>
+          <a class="nav-link btn-2" routerLink="contact" routerLinkActive="active">
+            <fa-icon [icon]="ContactIcon"></fa-icon> Contact
+          </a>
         </li>
       </ul>
     </div>
   </div>
+</nav>
+
+<nav class="mobile">
+  <a class="btn-2" routerLink="accueil" routerLinkActive="active">
+    <fa-icon class="icon" [icon]="CVIcon"></fa-icon> <br> Accueil
+  </a>
+  <a class="btn-2" routerLink="cv" routerLinkActive="active">
+    <fa-icon class="icon" [icon]="PortfolioIcon"></fa-icon> <br> Mon CV
+  </a>
+  <a class="btn-2" routerLink="portfolio" routerLinkActive="active">
+    <fa-icon class="icon" [icon]="PortfolioIcon"></fa-icon> <br> Portfolio
+  </a>
+  <a class="btn-2" routerLink="contact" routerLinkActive="active">
+    <fa-icon class="icon" [icon]="ContactIcon"></fa-icon> <br> Contact
+  </a>
 </nav>
