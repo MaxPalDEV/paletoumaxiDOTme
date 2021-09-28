@@ -64,7 +64,7 @@ export class ContactComponent implements OnInit {
   onSubmitForm(){
     const formValue = this.contactForm.value;
     this.httpClient
-      .post('http://api.paletoumaxi.me/cv/form', formValue)
+      .post('https://api.paletoumaxi.me/cv/form', formValue)
       .subscribe(
         () => {
           console.log('formulaire envoyé !');
