@@ -1,0 +1,22 @@
+@import '/src/app/styles/variables';
+
+.cross-validation-error input:focus {
+  border-left: 5px solid red;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.submitBtn
+{
+ color: $colorLink;
+ background-color: $backgroundColor-dark;
+ font-size: 20px;
+}
+
+.submitBtn:hover
+{
+ color: $colorLinkHover;
+ background-color: $backgroundColor-dark;
+}

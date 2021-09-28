@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,7 +19,7 @@ import { PortfolioService } from './services/portfolio.service';
 import { SingleItemPortfolioComponent } from './view/portfolio/single-item-portfolio/single-item-portfolio.component';
 import { PortfolioGuard } from './services/guard/portfolio-guard.service';
 import { NotFoundComponent } from './component/not-found/not-found.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -41,6 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FontAwesomeModule,
     BrowserAnimationsModule,
     NgxPopperjsModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
@@ -50,6 +51,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     PortfolioService,
     PortfolioGuard
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

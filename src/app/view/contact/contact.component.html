@@ -1,19 +1,47 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmitForm()">
-  <div class="form-group">
-    <label for="name">Votre nom :</label>
-    <input type="text" name="name" id="name" class="form-control" formControlName="name">
+  <div class="row"  *ngIf="showMsg">
+    <div class="col-xs-12">
+      <p class="alert alert-success alert-dismissible fade show">
+          Votre message a été envoyé ! Je répondrais dans les plus brefs délais.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </p>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="email">Votre email :</label>
-    <input type="text" name="email" id="email" class="form-control" formControlName="email">
+  <div class="row">
+    <div class="col">
+      <div class="cross-validation" [class.cross-validation-error]="name.errors?.required">
+        <div class="form-group">
+          <label for="name"> <h3>Nom</h3> </label>
+          <input type="text" name="name" id="name" class="form-control" formControlName="name" required>
+        </div>
+        </div>
+
+    </div>
+    <div class="col">
+      <div class="cross-validation" [class.cross-validation-error]="email.errors?.required || email.errors?.email">
+        <div class="form-group">
+          <label for="email"><h3>Email</h3></label>
+          <input type="text" name="email" id="email" class="form-control" formControlName="email" required>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="subject">Sujet :</label>
-    <input type="text" name="subject" id="subject" class="form-control" formControlName="subject">
+
+<div class="cross-validation" [class.cross-validation-error]="subject.errors?.required">
+  <div class="form-group" style="margin-top: 10px;">
+    <label for="subject"><h3>Sujet</h3></label>
+    <input type="text" name="subject" id="subject" class="form-control" formControlName="subject" required>
   </div>
-  <div class="form-group">
-    <label for="content">Contenu :</label>
-    <textarea name="content" class="form-control" id="" cols="30" rows="10" formControlName="content"></textarea>
+</div>
+
+<div class="cross-validation" [class.cross-validation-error]="content.errors?.required">
+  <div class="form-group" style="margin-top: 10px;">
+    <label for="content"><h3>Contenu</h3></label>
+    <textarea name="content" class="form-control" id="" cols="30" rows="10" formControlName="content" required></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Envoyer</button>
+</div>
+<div class="text-center" style="margin-top: 10px;">
+  <button type="submit" class="btn submitBtn" [disabled]="contactForm.invalid"><fa-icon [icon]="sendIcon" class="iconeStyle"></fa-icon> &nbsp; Envoyer</button>
+</div>
+
 </form>
