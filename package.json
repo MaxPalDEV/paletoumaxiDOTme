@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "dev:ssr": "ng run paletoumaxi-dot-me:serve-ssr",
+    "serve:ssr": "node dist/paletoumaxi-dot-me/server/main.js",
+    "build:ssr": "ng build && ng run paletoumaxi-dot-me:server",
+    "prerender": "ng run paletoumaxi-dot-me:prerender"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +22,7 @@
     "@angular/localize": "~12.2.0",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
+    "@angular/platform-server": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@fortawesome/angular-fontawesome": "^0.9.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -25,8 +30,10 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
+    "@nguniversal/express-engine": "^12.1.0",
     "@popperjs/core": "^2.10.1",
     "bootstrap": "^5.1.1",
+    "express": "^4.15.2",
     "ngx-popperjs": "^12.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
@@ -36,6 +43,8 @@
     "@angular-devkit/build-angular": "~12.2.5",
     "@angular/cli": "~12.2.5",
     "@angular/compiler-cli": "~12.2.0",
+    "@nguniversal/builders": "^12.1.0",
+    "@types/express": "^4.17.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.8.0",
@@ -44,6 +53,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "source-map-explorer": "^2.5.2",
     "typescript": "~4.3.5"
   }
 }
