@@ -26,6 +26,15 @@
 ***********************
 **********************/
 
+@media (max-width: 1390px) {
+  .contenu{
+    flex-direction: column;
+  }
+  .contenu5{
+    width: auto;
+  }
+}
+
 @media (max-width: 1670px){
 
 }
