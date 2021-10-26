@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { Portfolio } from 'src/app/models/portfolio';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 @Component({
   selector: 'app-portfolio',
@@ -10,20 +11,25 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
     // attach the fade in animation to the host (root) element of this component
     host: { '[@fadeInAnimation]': '' }*/
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent implements OnInit, OnDestroy {
 
-  portfolioSubscription!: Subscription;
-  portfolios: any[] | undefined;
+  //INIT des propriétés
+  public portfolio: Portfolio[] = [];
+  private portfolioSub!: Subscription;
 
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
-    this.portfolioSubscription = this.portfolioService.portfolioSubject.subscribe(
-      (portfolios: any[]) => {
-        this.portfolios = portfolios;
+    this.portfolioSub = this.portfolioService.portfolio$.subscribe(
+      (portfolio) => {
+        this.portfolio = portfolio;
       }
-    );
-    this.portfolioService.emitPortfolioSubject();
+    )
+    this.portfolioService.getAllPortfolio();
+  }
+
+  ngOnDestroy(): void {
+    this.portfolioSub.unsubscribe();
   }
 
 }

@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:'cv', component:CvComponent, data: {animation: '4'} },
   {path:'not-found', component:NotFoundComponent, data: {animation: '5'}},
   {path:'contact', component:ContactComponent, data: {animation: '6'}},
-  {path:'', redirectTo:'/accueil', data: {animation: '7'}},
+  //{path:'', redirectTo:'/accueil', data: {animation: '7'}},
   {path:'**', redirectTo:'/not-found', data: {animation: '8'}},
 
 ];

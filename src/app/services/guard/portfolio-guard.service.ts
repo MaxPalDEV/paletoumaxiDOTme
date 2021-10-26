@@ -14,7 +14,7 @@ export class PortfolioGuard implements CanActivate{
 
     const id = route.params.id
 
-    if (this.portfolioService.getPortfolioById(+id)?.id != null) {
+    if (this.portfolioService.getPortfolioById(id) != null) {
       return true;
     } else {
       this.router.navigate(['/portfolio']);
