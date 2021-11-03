@@ -16,16 +16,19 @@ export class PortfolioComponent implements OnInit, OnDestroy {
   //INIT des propriétés
   public portfolio: Portfolio[] = [];
   private portfolioSub!: Subscription;
+  public loading = false;
 
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
+    this.loading = true;
     this.portfolioSub = this.portfolioService.portfolio$.subscribe(
       (portfolio) => {
         this.portfolio = portfolio;
       }
     )
     this.portfolioService.getAllPortfolio();
+    this.loading = false;
   }
 
   ngOnDestroy(): void {

@@ -1,6 +1,12 @@
-<div class="alignStyle">
+<div class="alignStyle" *ngIf="loading">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<div class="alignStyle" *ngIf="!loading">
   <app-portfolio-item *ngFor="let item of portfolio; let i = index" [indexOfAppareil]="i" [itemName]="item.name" [itemLogo]="item.logo" [itemTechnos]="item.technos" [id]="item.id"></app-portfolio-item>
 </div>
 <div class="row text-center" style="margin-top: 15px;">
   <h4>D'autres projets à venir...</h4>
+
 </div>
