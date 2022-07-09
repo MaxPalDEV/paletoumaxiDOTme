@@ -31,7 +31,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "@nguniversal/express-engine": "^12.1.0",
-    "@popperjs/core": "^2.10.1",
+    "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.1.1",
     "express": "^4.15.2",
     "ngx-popperjs": "^12.1.2",
